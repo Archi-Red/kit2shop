@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/Box.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+}
+
+.inner-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.navbar .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.menu-toggler {
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
+.navbar-menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .2s linear;
+    /*text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 2px #141414,
+    1px 1px 3px #141414,
+    1px 1px 5px #141414,
+    1px 1px 7px #141414,
+    1px 1px 10px #141414,
+    1px 1px 12px #141414,
+    1px 1px 18px #141414;*/
+    color:#fff;
+}
+
+.navbar-menu a:hover {
+    color: #b98585 !important;
+}
+
+.sticky {
+    background-color: #fff;
+    padding: 18px 0;
+}
+
+.sticky .logo {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sticky .navbar-menu a {
+    color: #111;
+    text-shadow: none;
+}
+
+.sticky .menu-toggler span {
+    background-color: #111;
+}
+
+#home {
+    height: 100vh;
+    min-height: 500px;
+}
+
+#home .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content {
+    width: 100%;
+    color: #fff;
+}
+
+#home .content h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#home .content .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .content .title h1 {
+    margin: auto 0;
+}
+
+#home .content .title h1:nth-child(1)::after {
+    content: "par des";
+    animation: textanim 5s linear infinite;
+    text-transform: uppercase;
+}
+
+#home .content .description {
+    text-align: left;
+    width: 19%;
+    position: absolute;
+    left: 13%;
+    bottom: 10%;
+}
+
+#home .content .description h2 {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+#home .content .description p {
+    font-size: 20px;
+}
+
+@keyframes textanim {
+    50% {
+        content: "POUR LES"
+    }
+}
+
+#home .content .title h1:nth-child(2) {
+    margin-left: 15px;
+}
+
+
+@media screen and (max-width: 980px) {
+    .inner-width {
+        max-width: 800px;
+    }
+
+    .menu-toggler {
+        display: block;
+    }
+
+    .navbar-menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #d49494;
+        top: 0;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: .3s linear;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-menu a {
+        display: block;
+        font-size: 30px;
+        margin: 30px 0;
+        text-shadow: none;
+    }
+
+    .navbar-menu.active {
+        right: 0;
+    }
+
+    .menu-toggler.active span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+
+    .menu-toggler.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggler.active span:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 14px;
+    }
+
+    #home .content .description {
+        margin-bottom: 5px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inner-width {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        padding-top: 0;
+    }
+
+    #home .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    #home .content .title {
+        flex-direction: column;
+        margin-bottom: 100%;
+    }
+
+    #home .content .title h1:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    #home .content .description {
+        left: 10%;
+        overflow: hidden;
+        width: 80%;
+        margin-bottom: 50px;
+        bottom: -50px;
+    }
+}

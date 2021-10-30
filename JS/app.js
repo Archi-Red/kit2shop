@@ -36,3 +36,4 @@ function changebig(event) {
         document.querySelector(".pro-img-big").src = 'img/bigBox/05_-_Yellow.png';
     }
 }
+

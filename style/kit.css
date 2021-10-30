@@ -64,6 +64,10 @@ body {
     margin: 30px 0;
 }
 
+#product .box-product #big {
+    width: 222px;
+}
+
 .box-product .main-img {
     
     width: 100%;

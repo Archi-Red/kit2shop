@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/kit.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="./JS/jquery-ui.min.js"></script>
+    <script src="JS/app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--NavBar-->
+    <nav class='navbar'>
+        <div class='inner-width'>
+            <a href='index.html' class='logo'></a>
+            <button class='menu-toggler'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class='navbar-menu'>
+                <a href='index.html'>Accueil</a>
+                <a href='index.html'>Meubles</a>
+                <a href='kit.html'>Kit</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section id='home'>
+        <div class='inner-width'>
+            <div class='content'>
+                <a href="#product">
+                    <div class="drop">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="product">
+        <div class="inner-width">
+            <div class="box-product">
+                <h2>kit small</h2>
+                <div class="content-box">
+                    <div class="main-img">
+                        <img src="img/smallBox/02_-_Black.png" class="pro-img" alt="">
+                        <div class="description">
+                            <h3>Contenu :</h3>
+                            <ul>
+                                <li>- 1 table</li>
+                                <li>- 2 Chaises</li>
+                                <li>- 4 Rangements</li>
+                                <li>- 1 Sommier + 1 Table de nuit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="choice-img">
+                        <div id="small-black" onclick="change(this)"></div>
+                        <div id="small-red" onclick="change(this)"></div>
+                        <div id="small-blue" onclick="change(this)"></div>
+                        <div id="small-yellow" onclick="change(this)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

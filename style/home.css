@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/Box.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home {
+    height: 100vh;
+    min-height: 500px;
+}
+
+#home .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content {
+    width: 100%;
+    color: #fff;
+}
+
+#home .content h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#home .content .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .content .title h1 {
+    margin: auto 0;
+}
+
+#home .content .title h1:nth-child(1)::after {
+    content: "par des";
+    animation: textanim 5s linear infinite;
+    text-transform: uppercase;
+}
+
+#home .content .description {
+    text-align: left;
+    width: 19%;
+    position: absolute;
+    left: 13%;
+    bottom: 10%;
+}
+
+#home .content .description h2 {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+#home .content .description p {
+    font-size: 20px;
+}
+
+@keyframes textanim {
+    50% {
+        content: "POUR LES"
+    }
+}
+
+#home .content .title h1:nth-child(2) {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 980px) {
+
+    #home .inner-width {
+        align-items: flex-start;
+    }
+
+    #home .content .title {
+        flex-direction: column;
+    }
+
+    .inner-width .content {
+        margin-top: 150px;
+    }
+
+    #home .content .description {
+        width: 80%;
+    }
+
+}

@@ -11,58 +11,23 @@
 }
 
 body {
-    background: url(../img/Box.png) no-repeat center;
+    background-color: #e8b7b7;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#home {
+#product {
     height: 100vh;
     min-height: 500px;
-}
-
-#home .inner-width {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
 }
 
 #product .inner-width {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     height: 100%;
     text-align: center;
-}
-
-.content .drop {
-    position: fixed;
-    height: 70px;
-    width: 70px;
-    bottom: 50px;
-    right: calc(50% - 30px);
-    background-color: #d49494;
-    font-size: 50px;
-    text-align: center;
-    line-height: 80px;
-    border-radius: 50%;
-    color: white;
-    cursor: pointer;
-}
-
-.content .drop i {
-    animation: drop 1s ease infinite;
-}
-
-@keyframes drop {
-    0%,100% {
-        transform: translateY(-5px);
-    }
-    50% {
-        transform: translateY(5px);
-    }
 }
 
 #product {
@@ -75,89 +40,133 @@ body {
 }
 
 #product .box-product {
-    width: 800px;
-    background-color: rgba(255, 255, 255, .9);
+    width: 100%;
+	box-shadow: 1px 1px 20px rgba(60, 60, 60, .3);
+    background-color: rgba(255, 255, 255, .8);
     border-radius: 20px;
-    padding: 10px;
+    padding: 50px 150px;
+}
+
+#product .box-product:nth-child(1) {
+    margin-top: 200px;
+}
+
+#product .box-product:nth-child(2) {
+    margin-top: 50px;
 }
 
 #product .box-product h2 {
-    width: 40%;
+    text-align: left;
+    width: 328px;
     text-transform: uppercase;
-    border-bottom: 2px solid black;
-    font-size: 45px;
-    margin: 30px ;
+    border-bottom: 3px solid black;
+    font-size: 60px;
+    margin: 30px 0;
 }
 
 .box-product .main-img {
-    max-width: 100%;
-    max-height: 100%;
+    
     width: 100%;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
 .box-product .main-img img{
     max-width: 50%;
     max-height: 50%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-
+    margin-right: 60px;
 }
 
 .box-product .main-img .description {
     text-align: left;
     width: 50%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     flex-direction: column;
+    margin-left: 60px;
 }
 
 .box-product .main-img .description h3 {
-    font-size: 25px;
+    font-size: 40px;
     border-bottom: 2px solid black;
+    margin-bottom: 35px;
 }
 
 .box-product .main-img .description ul {
-    font-size: 20px;
+    font-size: 25px;
     list-style-type: none;
 }
 
 .box-product .main-img .description li {
-    line-height: 35px;
+    line-height: 45px;
 }
 
 .choice-img {
     display: flex;
     width: 50%;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .choice-img #small-black,
 .choice-img #small-red,
 .choice-img #small-blue,
-.choice-img #small-yellow {
+.choice-img #small-yellow,
+.choice-img #big-black,
+.choice-img #big-red,
+.choice-img #big-blue,
+.choice-img #big-yellow {
     width: 45%;
-    height: 15px;
+    height: 20px;
     border-radius: 20px;
     margin: 5px;
     cursor: pointer;
 }
 
-.choice-img #small-black {
+.choice-img #small-black,
+.choice-img #big-black {
     background-color: black;
 }
 
-.choice-img #small-red {
-    background-color: red;
+.choice-img #small-red,
+.choice-img #big-red {
+    background-color: #8c2929;
 }
 
-.choice-img #small-blue {
-    background-color: blue;
+.choice-img #small-blue,
+.choice-img #big-blue {
+    background-color: #2d345d;
 }
 
-.choice-img #small-yellow {
-    background-color: yellow;
+.choice-img #small-yellow,
+.choice-img #big-yellow {
+    background-color: #aeb036;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom button {
+    margin-right: 5%;
+    width: 250px;
+    background-color: #e8b7b7;
+    border: none;
+    border-radius: 20px;
+
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.bottom button:hover {
+    box-shadow: 3px 3px 2px 1px #d49494;
+    transition: .1s linear;
 }
 
 @media screen and (max-width: 980px) {
@@ -173,10 +182,5 @@ body {
 
     .navbar {
         padding-top: 0;
-    }
-
-    #home .content {
-        display: flex;
-        justify-content: center;
     }
 }

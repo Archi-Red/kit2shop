@@ -54,7 +54,7 @@ body {
 .box-product .main-img {
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -181,9 +181,11 @@ body {
     justify-content: space-between;
 }
 
-.bottom button {
+.bottom a button,
+.main-img .description button {
     margin-right: 5%;
     width: 250px;
+    height: 50px;
     background-color: #e8b7b7;
     border: none;
     border-radius: 20px;
@@ -193,8 +195,17 @@ body {
     transition: .1s linear;
 }
 
-.bottom button:hover {
+.main-img .description a button {
+    height: 50px;
+}
+
+.bottom a button:hover,
+.main-img .description button:hover {
     box-shadow: 3px 3px 2px 1px #d49494;
+}
+
+.main-img .description button i {
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 980px) {

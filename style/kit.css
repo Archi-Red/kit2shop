@@ -17,8 +17,13 @@ body {
 }
 
 #product {
-    height: 100vh;
-    min-height: 500px;
+    height: 100%;
+    width: 100%;
+    transition: .5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0 50px 0;
 }
 
 #product .inner-width {
@@ -26,17 +31,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    height: 100%;
     text-align: center;
-}
-
-#product {
-    height: 100vh;
-    width: 100%;
-    transition: .5s linear;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #product .box-product {
@@ -45,31 +40,18 @@ body {
     background-color: rgba(255, 255, 255, .8);
     border-radius: 20px;
     padding: 50px 150px;
-}
-
-#product .box-product:nth-child(1) {
-    margin-top: 200px;
-}
-
-#product .box-product:nth-child(2) {
-    margin-top: 50px;
+    margin: 25px 0;
 }
 
 #product .box-product h2 {
     text-align: left;
-    width: 328px;
     text-transform: uppercase;
     border-bottom: 3px solid black;
     font-size: 60px;
     margin: 30px 0;
 }
 
-#product .box-product #big {
-    width: 222px;
-}
-
 .box-product .main-img {
-    
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -104,6 +86,9 @@ body {
 .box-product .main-img .description ul {
     font-size: 25px;
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .box-product .main-img .description li {
@@ -123,7 +108,27 @@ body {
 .choice-img #big-black,
 .choice-img #big-red,
 .choice-img #big-blue,
-.choice-img #big-yellow {
+.choice-img #big-yellow,
+.choice-img #chaise-black,
+.choice-img #chaise-red,
+.choice-img #chaise-blue,
+.choice-img #chaise-yellow,
+.choice-img #etagere-black,
+.choice-img #etagere-red,
+.choice-img #etagere-blue,
+.choice-img #etagere-yellow,
+.choice-img #table-black,
+.choice-img #table-red,
+.choice-img #table-blue,
+.choice-img #table-yellow,
+.choice-img #sommier-black,
+.choice-img #sommier-red,
+.choice-img #sommier-blue,
+.choice-img #sommier-yellow,
+.choice-img #tdn-black,
+.choice-img #tdn-red,
+.choice-img #tdn-blue,
+.choice-img #tdn-yellow {
     width: 45%;
     height: 20px;
     border-radius: 20px;
@@ -132,22 +137,42 @@ body {
 }
 
 .choice-img #small-black,
-.choice-img #big-black {
+.choice-img #big-black,
+.choice-img #chaise-black,
+.choice-img #etagere-black,
+.choice-img #table-black,
+.choice-img #sommier-black,
+.choice-img #tdn-black {
     background-color: black;
 }
 
 .choice-img #small-red,
-.choice-img #big-red {
+.choice-img #big-red,
+.choice-img #chaise-red,
+.choice-img #etagere-red,
+.choice-img #table-red,
+.choice-img #sommier-red,
+.choice-img #tdn-red {
     background-color: #8c2929;
 }
 
 .choice-img #small-blue,
-.choice-img #big-blue {
+.choice-img #big-blue,
+.choice-img #chaise-blue,
+.choice-img #etagere-blue,
+.choice-img #table-blue,
+.choice-img #sommier-blue,
+.choice-img #tdn-blue {
     background-color: #2d345d;
 }
 
 .choice-img #small-yellow,
-.choice-img #big-yellow {
+.choice-img #big-yellow,
+.choice-img #chaise-yellow,
+.choice-img #etagere-yellow,
+.choice-img #table-yellow,
+.choice-img #sommier-yellow,
+.choice-img #tdn-yellow {
     background-color: #aeb036;
 }
 
@@ -165,11 +190,11 @@ body {
     color: #fff;
     font-size: 25px;
     cursor: pointer;
+    transition: .1s linear;
 }
 
 .bottom button:hover {
     box-shadow: 3px 3px 2px 1px #d49494;
-    transition: .1s linear;
 }
 
 @media screen and (max-width: 980px) {

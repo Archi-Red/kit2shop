@@ -3,14 +3,6 @@ $(document).ready(function(){
         $(this).toggleClass("active");
         $(".navbar-menu").toggleClass("active");
     });
-
-    $(window).scroll(function() {
-        if($(this).scrollTop() < 40) {
-            $('.drop').fadeIn();
-        } else {
-            $('.drop').fadeOut();
-        }
-    });
 });
 
 function changesmall(event) {
@@ -37,3 +29,62 @@ function changebig(event) {
     }
 }
 
+function changechaise(event) {
+    if(event.id=="chaise-black") {
+        document.querySelector(".pro-img-chaise").src = 'img/chaise/CHAIR_BLACK.png';
+    } else if(event.id=="chaise-red") {
+        document.querySelector(".pro-img-chaise").src = 'img/chaise/CHAIR_RED.png';
+    } else if(event.id=="chaise-blue") {
+        document.querySelector(".pro-img-chaise").src = 'img/chaise/CHAIR_BLUE.png';
+    } else if(event.id=="chaise-yellow") {
+        document.querySelector(".pro-img-chaise").src = 'img/chaise/CHAIR_YELLOW.png';
+    }
+}
+
+function changeetagere(event) {
+    if(event.id=="etagere-black") {
+        document.querySelector(".pro-img-etagere").src = 'img/etageres/RGM_BLACK.png';
+    } else if(event.id=="etagere-red") {
+        document.querySelector(".pro-img-etagere").src = 'img/etageres/RGM_RED.png';
+    } else if(event.id=="etagere-blue") {
+        document.querySelector(".pro-img-etagere").src = 'img/etageres/RGM_BLUE.png';
+    } else if(event.id=="etagere-yellow") {
+        document.querySelector(".pro-img-etagere").src = 'img/etageres/RGM_YELLOW.png';
+    }
+}
+
+function changetable(event) {
+    if(event.id=="table-black") {
+        document.querySelector(".pro-img-table").src = 'img/table/TABLE_BLACK.png';
+    } else if(event.id=="table-red") {
+        document.querySelector(".pro-img-table").src = 'img/table/TABLE_RED.png';
+    } else if(event.id=="table-blue") {
+        document.querySelector(".pro-img-table").src = 'img/table/TABLE_BLUE.png';
+    } else if(event.id=="table-yellow") {
+        document.querySelector(".pro-img-table").src = 'img/table/TABLE_YELLOW.png';
+    }
+}
+
+function changesommier(event) {
+    if(event.id=="sommier-black") {
+        document.querySelector(".pro-img-sommier").src = 'img/sommier/SOMMIER_BLACK.png';
+    } else if(event.id=="sommier-red") {
+        document.querySelector(".pro-img-sommier").src = 'img/sommier/SOMMIER_RED.png';
+    } else if(event.id=="sommier-blue") {
+        document.querySelector(".pro-img-sommier").src = 'img/sommier/SOMMIER_BLUE.png';
+    } else if(event.id=="sommier-yellow") {
+        document.querySelector(".pro-img-sommier").src = 'img/sommier/SOMMIER_YELLOW.png';
+    }
+}
+
+function changetdn(event) {
+    if(event.id=="tdn-black") {
+        document.querySelector(".pro-img-tdn").src = 'img/tdn/TDN_BLACK.png';
+    } else if(event.id=="tdn-red") {
+        document.querySelector(".pro-img-tdn").src = 'img/tdn/TDN_RED.png';
+    } else if(event.id=="tdn-blue") {
+        document.querySelector(".pro-img-tdn").src = 'img/tdn/TDN_BLUE.png';
+    } else if(event.id=="tdn-yellow") {
+        document.querySelector(".pro-img-tdn").src = 'img/tdn/TDN_YELLOW.png';
+    }
+}

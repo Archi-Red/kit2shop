@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/kit.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="./JS/jquery-ui.min.js"></script>
+    <script src="JS/app.js"></script>
+    <title>RedOrbs</title>
+</head>
+<body>
+    <!--NavBar-->
+    <nav class='navbar'>
+        <div class='inner-width'>
+            <a href='index.html' class='logo'></a>
+            <button class='menu-toggler'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class='navbar-menu'>
+                <a href='index.html'>Accueil</a>
+                <a href='meuble.html'>Meubles</a>
+                <a href='kit.html'>Kit</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section id='product'>
+        <div class='inner-width'>
+
+            <div class="box-product">
+                <h2>chaise</h2>
+                <div class="content-box">
+                    <div class="main-img">
+                        <img src="img/chaise/CHAIR_BLACK.png" class="pro-img-chaise" alt="">
+                        <div class="description">
+                            <h3>Dimensions</h3>
+                            <ul>
+                                <li>- Largeur: 45cm</li>
+                                <li>- Hauteur: 90cm</li>
+                                <li>- Profondeur: 50cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="choice-img">
+                            <div id="chaise-black" onclick="changechaise(this)"></div>
+                            <div id="chaise-red" onclick="changechaise(this)"></div>
+                            <div id="chaise-blue" onclick="changechaise(this)"></div>
+                            <div id="chaise-yellow" onclick="changechaise(this)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-product">
+                <h2>étagère</h2>
+                <div class="content-box">
+                    <div class="main-img">
+                        <img src="img/etageres/RGM_BLACK.png" class="pro-img-etagere" alt="">
+                        <div class="description">
+                            <h3>Dimensions</h3>
+                            <ul>
+                                <li>- Largeur: 45cm</li>
+                                <li>- Hauteur: 100cm</li>
+                                <li>- Profondeur: 45cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="choice-img">
+                            <div id="etagere-black" onclick="changeetagere(this)"></div>
+                            <div id="etagere-red" onclick="changeetagere(this)"></div>
+                            <div id="etagere-blue" onclick="changeetagere(this)"></div>
+                            <div id="etagere-yellow" onclick="changeetagere(this)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-product">
+                <h2>table</h2>
+                <div class="content-box">
+                    <div class="main-img">
+                        <img src="img/table/TABLE_BLACK.png" class="pro-img-table" alt="">
+                        <div class="description">
+                            <h3>Dimensions</h3>
+                            <ul>
+                                <li>- Largeur: 90cm</li>
+                                <li>- Hauteur: 95cm</li>
+                                <li>- Profondeur: 180cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="choice-img">
+                            <div id="table-black" onclick="changetable(this)"></div>
+                            <div id="table-red" onclick="changetable(this)"></div>
+                            <div id="table-blue" onclick="changetable(this)"></div>
+                            <div id="table-yellow" onclick="changetable(this)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-product">
+                <h2>sommier</h2>
+                <div class="content-box">
+                    <div class="main-img">
+                        <img src="img/sommier/SOMMIER_BLACK.png" class="pro-img-sommier" alt="">
+                        <div class="description">
+                            <h3>Dimensions</h3>
+                            <ul>
+                                <li>- Largeur: 90cm</li>
+                                <li>- Hauteur: 50cm</li>
+                                <li>- Profondeur: 180cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="choice-img">
+                            <div id="sommier-black" onclick="changesommier(this)"></div>
+                            <div id="sommier-red" onclick="changesommier(this)"></div>
+                            <div id="sommier-blue" onclick="changesommier(this)"></div>
+                            <div id="sommier-yellow" onclick="changesommier(this)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-product">
+                <h2>table de nuit</h2>
+                <div class="content-box">
+                    <div class="main-img">
+                        <img src="img/tdn/TDN_BLACK.png" class="pro-img-tdn" alt="">
+                        <div class="description">
+                            <h3>Dimensions</h3>
+                            <ul>
+                                <li>- Largeur: 45cm</li>
+                                <li>- Hauteur: 55cm</li>
+                                <li>- Profondeur: 45cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="choice-img">
+                            <div id="tdn-black" onclick="changetdn(this)"></div>
+                            <div id="tdn-red" onclick="changetdn(this)"></div>
+                            <div id="tdn-blue" onclick="changetdn(this)"></div>
+                            <div id="tdn-yellow" onclick="changetdn(this)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
